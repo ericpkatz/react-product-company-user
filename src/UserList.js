@@ -13,9 +13,10 @@ function UserList() {
       <ul>
         {
           users.map( user => {
+            const company = companies.find( company => company.id === user.companyId );
             return (
               <li key={ user.id }>
-                { user.name }
+                <strong>{ user.name }</strong> from { user.state } works for { company.name }
               </li>
             );
           })

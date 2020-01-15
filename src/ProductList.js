@@ -15,7 +15,7 @@ function ProductList() {
             products.map( product => {
               return (
                 <li key={ product.id }>
-                  { product.name }
+                  <strong>{ product.name }</strong> made with { product.material }
                 </li>
               );
             })

@@ -15,7 +15,7 @@ function CompanyList() {
             companies.map( company => {
               return (
                 <li key={ company.id }>
-                  { company.name }
+                  <strong>{ company.name }</strong> in { company.state }
                 </li>
               );
             })
